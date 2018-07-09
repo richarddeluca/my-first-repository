@@ -129,8 +129,12 @@ button:active {
   display: none;
 }
 
+#segundos {
+  font-size: 110%;
+}
+
 #mediaDeLeitura {
-  font-size: 130%;
+  font-size: 160%;
   padding-bottom: 10%;
 }
 
