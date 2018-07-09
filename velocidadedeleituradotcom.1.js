@@ -63,6 +63,12 @@ function botaoTerminar() {
   if (true) {
     document.querySelector("#parteDois").style.display = 'none';
     document.querySelector("#botaoTerminar").style.display = 'none';
+    document.getElementById("iframe").style.display = 'block';
+    // document.getElementById("#iframe2").style.display = 'block';
+    // document.getElementById("#iframe3").style.display = 'block';
+    // document.getElementById("#iframe4").style.display = 'block';
+    // document.getElementById("#iframe5").style.display = 'block';
+
 
     segundos.innerHTML = 'Você levou ' + s + ' segundos para ler esse trecho' + '<br> Sua média de leitura é de';
     media = parseInt(60 / s * p)

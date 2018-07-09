@@ -131,4 +131,10 @@ button:active {
 
 #mediaDeLeitura {
   font-size: 130%;
+  padding-bottom: 10%;
+}
+
+#iframe {
+  display: none;
+  float: left;
 }
