@@ -8,62 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Bootstrap-->
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
-  <!--jQuery-->
-  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
   <!--CSS-->
   <link rel="stylesheet" type="text/css" media="screen" href="velocidadedeleituradotcom.1.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="css.css" /> -->
 </head>
 
 <body id="background">
-  <!--Colocarei navbar aqui-->
-
-  <!-- <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </nav> -->
-
-  <!--jumbotron-->
-
-  <!-- <div class="container">
-    <div class="jumbotron">
-      <h1>Teste sua velocidade de leitura</h1>
-      <h3>Vai lá campeão</h3>
-    </div>
-  </div> -->
-
-
   <div class="container" id="tudo">
 
       <!--____ PARTE FRONT ____-->
 
     <div id="parteFront">
-      <h1 onclick="botaoFront()">Teste sua<br>velocidade de leitura</h1>
+      <h1 id=textoFront onclick="botaoFront()">Teste sua<br>velocidade de leitura</h1>
+      <button id="botaoFront" onclick="botaoFront()">Continue</button>
     </div>
 
       <!--____ PARTE UM ____-->
@@ -74,7 +30,7 @@
       <!-- selecionar um de três livros-->
       <form id="form">
         <fieldset>
-          <legend>!!!</legend>
+          <legend>Domínio público</legend>
           <div>
             <input type="radio" id="livro1" name="livros" value="1" checked>
             <label for="contactChoice1">Histórias da Meia-noite - Machado de Assis</label>
@@ -89,8 +45,6 @@
           </div>
         </fieldset>
       </form>
-
-      <!-- selecionar outros livros -->
 
       <!-- Botão para começar o teste-->
       <div>
@@ -154,23 +108,23 @@
     <p id="segundos"></p>
     <p id="mediaDeLeitura"></p>
     <div id="iframe">
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B0186FEYKW&asins=B0186FEYKW&linkId=303d47b6b8f11fe3acaacfe0e6ebbe47&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B0186FEYKW&asins=B0186FEYKW&linkId=303d47b6b8f11fe3acaacfe0e6ebbe47&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B071XFZH98&asins=B071XFZH98&linkId=bed5942598682720bf8c608a9301ce25&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B071XFZH98&asins=B071XFZH98&linkId=bed5942598682720bf8c608a9301ce25&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B076V3CYVS&asins=B076V3CYVS&linkId=713d4bc5667c88a4e20a3b3a4d0e1b19&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B076V3CYVS&asins=B076V3CYVS&linkId=713d4bc5667c88a4e20a3b3a4d0e1b19&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B075C71B85&asins=B075C71B85&linkId=8ba28e7a5332e7b5d09d947ff8a6d0a1&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=B075C71B85&asins=B075C71B85&linkId=8ba28e7a5332e7b5d09d947ff8a6d0a1&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8539004119&asins=8539004119&linkId=3d447d42705222f4be09f7356a0427ab&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8539004119&asins=8539004119&linkId=3d447d42705222f4be09f7356a0427ab&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8547000240&asins=8547000240&linkId=f136e9bf0e8f27b37a0d0473170f79ed&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8547000240&asins=8547000240&linkId=f136e9bf0e8f27b37a0d0473170f79ed&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=853900383X&asins=853900383X&linkId=bac24c4e645051661230d8587a5e6021&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <!-- <iframe scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=853900383X&asins=853900383X&linkId=bac24c4e645051661230d8587a5e6021&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
-    <!-- <iframe id="iframe" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8539005352&asins=8539005352&linkId=dd92db7184fe47ffcc7a1de26bbf4b75&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe id="iframe" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8539005352&asins=8539005352&linkId=dd92db7184fe47ffcc7a1de26bbf4b75&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
-    <iframe class="iframe" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8546500452&asins=8546500452&linkId=4f12a24ecab6d6a719d2253f3cdb1214&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=livrosdepnl-20&marketplace=amazon&region=BR&placement=8546500452&asins=8546500452&linkId=4f12a24ecab6d6a719d2253f3cdb1214&show_border=false&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe> -->
   </div>
   </div>

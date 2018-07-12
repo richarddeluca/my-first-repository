@@ -24,7 +24,7 @@ var mediaDeLeitura = document.querySelector("#mediaDeLeitura")
 function botaoFront() {
   document.querySelector("#parteFront").style.display = 'none';
   document.querySelector('#parteUm').style.display = 'block';
-  document.querySelector('body').style.backgroundColor = "#ffffbc";
+  document.querySelector('body').style.backgroundColor = "#f4f4cc";
   // document.querySelector('body').id = 'background';
 }
 
@@ -48,7 +48,7 @@ function botaoComecar() {
   // document.querySelector("#botaoComecar").style.display = 'none';
   document.querySelector("#parteUm").style.display = 'none';
   document.querySelector("#botaoTerminar").style.display = 'block';
-  document.querySelector('body').style.backgroundColor = "#ffffdc";
+  document.querySelector('body').style.backgroundColor = "#ffffec";
   var contador = window.setInterval(function () {
     s++;
   }, 1000);

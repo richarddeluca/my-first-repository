@@ -1,9 +1,7 @@
 body {
-  /* background-image: url(img/books-background.jpg); */
   background-color: #9900ad;
   text-align: center;
-  /* color: white; */
-  font-size: 110%;
+  font-size: 1.1em;
 }
 
 #background {
@@ -15,19 +13,12 @@ h1 {
 }
 
 #tudo {
-  /* background-color: #79ffffb7; */
   margin-top: 14%;
 }
 
-
-
 body {
-  margin: 20px auto;
-  padding: 40px;
   font-family: sans-serif;
-  width: 80%;
-  max-width: 1000px;
-  margin: 20px auto;
+  margin: auto 10px;
 }
 
 h1 {
@@ -37,7 +28,6 @@ h1 {
 	line-height: 1.1;
 	padding: 20px 0;
 }
-
 
 label {
   margin-right: 15px;
@@ -62,22 +52,23 @@ input {
 }
 
 input:checked {
-  border: 6px solid black;
+  border: 6px solid #7b008b;
 }
-
 
 button,
 legend {
   color: white;
-  background-color: rgb(26, 26, 26);
+  background-color: #7b008b;
   padding: 5px 10px;
   border-radius: 0;
   border: 0;
   font-size: 14px;
+  max-width: 600px;
 }
 
 button {
-    margin: 10px 0;
+  margin: 10px 0;
+    
 }
 
 button:hover,
@@ -88,21 +79,8 @@ button:focus {
 button:active {
   background-color: white;
   color: black;
-  outline: 1px solid black;
+  outline: none;
 }
-
-.square {
-	width: 30%;
-	background: purple;
-	padding-bottom: 30%;
-	float: left;
-	margin: 1.6%;
-	border-radius: 15%;
-	transition: background 0.4s;
-	--webkit-transition: background 0.4s;
-	--moz-transition: background 0.4s;
-}
-
 
 .trechos {
   display: none;
@@ -114,15 +92,7 @@ button:active {
 
 #form {
   text-align: left;
-}
-
-/* não deu certo */
-#botaoTerminar {
-  text-align: center;
-}
-
-#botaoVoltar {
-  display: none;
+  max-width: 600px;
 }
 
 #parteUm {
@@ -130,15 +100,48 @@ button:active {
 }
 
 #segundos {
-  font-size: 110%;
+  font-size: 1.1em;
 }
 
 #mediaDeLeitura {
-  font-size: 160%;
+  font-size: 2em;
   padding-bottom: 10%;
 }
 
 #iframe {
   display: none;
   float: left;
+}
+
+@media (min-width: 660px) {
+  body {
+    max-width: 700px;
+    margin: 20px auto;
+    }
+}
+
+@media (min-width: 900px) {
+  body {
+    max-width: 800px;
+    margin: 20px auto;
+    }
+}
+
+#botaoFront {
+  background: transparent;
+  color: white;
+  font-size: 1.3em;
+}
+
+#botaoFront:hover,
+#botaoFront:focus,
+#textoFront:hover,
+#textoFront:focus {
+  color: #d5d5ef;
+}
+
+iframe {
+  width:120px;
+  height:240px;
+  margin: 0 0;
 }
