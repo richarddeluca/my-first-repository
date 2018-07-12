@@ -24,7 +24,7 @@ var mediaDeLeitura = document.querySelector("#mediaDeLeitura")
 function botaoFront() {
   document.querySelector("#parteFront").style.display = 'none';
   document.querySelector('#parteUm').style.display = 'block';
-  document.querySelector('body').style.backgroundColor = "#f4f4cc";
+  document.querySelector('body').style.backgroundColor = "#f4f4ec";
   // document.querySelector('body').id = 'background';
 }
 
@@ -48,7 +48,7 @@ function botaoComecar() {
   // document.querySelector("#botaoComecar").style.display = 'none';
   document.querySelector("#parteUm").style.display = 'none';
   document.querySelector("#botaoTerminar").style.display = 'block';
-  document.querySelector('body').style.backgroundColor = "#ffffec";
+  document.querySelector('body').style.backgroundColor = "#fefefe";
   var contador = window.setInterval(function () {
     s++;
   }, 1000);
@@ -64,6 +64,7 @@ function botaoTerminar() {
     document.querySelector("#parteDois").style.display = 'none';
     document.querySelector("#botaoTerminar").style.display = 'none';
     document.getElementById("iframe").style.display = 'block';
+    document.querySelector("#demo-top-bar").style.display = 'block';
     // document.getElementById("#iframe2").style.display = 'block';
     // document.getElementById("#iframe3").style.display = 'block';
     // document.getElementById("#iframe4").style.display = 'block';

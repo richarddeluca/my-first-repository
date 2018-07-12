@@ -1,5 +1,7 @@
 body {
-  background-color: #9900ad;
+  /* background-color: #9900ad; */
+  background-color: #006eff;
+  font-family: sans-serif;
   text-align: center;
   font-size: 1.1em;
 }
@@ -13,16 +15,11 @@ h1 {
 }
 
 #tudo {
-  margin-top: 14%;
-}
-
-body {
-  font-family: sans-serif;
-  margin: auto 10px;
+  margin: 14% 20px 0;
 }
 
 h1 {
-	margin: 0;
+	margin: 3.5em 0 1em 0;
 	font-weight: normal;
 	text-transform: uppercase;
 	line-height: 1.1;
@@ -52,13 +49,16 @@ input {
 }
 
 input:checked {
-  border: 6px solid #7b008b;
+  /* border: 6px solid #7b008b; */
+  border: 6px solid #006eff;
+
 }
 
 button,
 legend {
   color: white;
-  background-color: #7b008b;
+  /* background-color: #7b008b; */
+  background-color: #006eff;
   padding: 5px 10px;
   border-radius: 0;
   border: 0;
@@ -114,16 +114,19 @@ button:active {
 }
 
 @media (min-width: 660px) {
-  body {
+  #tudo {
     max-width: 700px;
-    margin: 20px auto;
+    margin: 10% auto 0;
     }
+  #textoFront {
+    font-size: 3em;
+  }
 }
 
 @media (min-width: 900px) {
-  body {
+  #tudo {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 8% auto;
     }
 }
 
@@ -144,4 +147,18 @@ iframe {
   width:120px;
   height:240px;
   margin: 0 0;
+}
+
+#demo-top-bar {
+  display: none;
+  /* background: rgb(255, 255, 255); */
+  position: relative;
+  width: 100% !important;
+  z-index: 6000;
+  padding: 20px 0 0;
+  font-weight: bold;
+}
+
+a, h6 {
+  color: #006eff;
 }
